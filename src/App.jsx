@@ -4,6 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import NerdyThings from './pages/NerdyThings/NerdyThings'
+import NatureThings from './NatureThings/NatureThings'
 
 const App = () => {
   const bensThings = [
@@ -70,6 +71,25 @@ const App = () => {
     },
   ]
 
+  const natureThings = [
+    {
+      name: 'tree',
+      image:
+        'https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      attributes: ['lovely', 'oxygenating', 'shade'],
+    },
+    {
+      name: 'cuttlefish',
+      image: 'https://i.imgur.com/https://images.unsplash.com/photo-1563050912-4659b1079ee4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80.jpg',
+      attributes: ['intelligent', 'gorgeous', 'so cool'],
+    },
+    {
+      name: 'sky',
+      image: 'https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+      attributes: ['beautiful', 'atmospheric?', 'dark'],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -89,6 +109,10 @@ const App = () => {
       <Route
         path="/the-nerdy-things"
         element={<NerdyThings things={nerdyThings} />}
+      />
+      <Route
+        path="/the-nature-things"
+        element={<NatureThings things={natureThings} />}
       />
     </Routes>
   )
