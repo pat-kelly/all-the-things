@@ -5,6 +5,7 @@ import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import NerdyThings from './pages/NerdyThings/NerdyThings'
 import NatureThings from './NatureThings/NatureThings'
+import FluffyThings from './pages/FluffyThings/FluffyThings'
 
 const App = () => {
   const bensThings = [
@@ -90,6 +91,20 @@ const App = () => {
     },
   ]
 
+  const fluffyThings = [
+    {
+      name: 'cat',
+      image:
+        'https://imgs.xkcd.com/comics/cat.png',
+      attributes: ['fluffy', 'playful', 'curious'],
+    },
+    {
+      name: 'dog',
+      image: 'https://imgs.xkcd.com/comics/dog.png',
+      attributes: ['fluffy', 'loyal', 'friendly'],
+    }
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -113,6 +128,10 @@ const App = () => {
       <Route
         path="/the-nature-things"
         element={<NatureThings things={natureThings} />}
+      />
+      <Route
+        path="/the-fluffy-things"
+        element={<FluffyThings things={fluffyThings} />}
       />
     </Routes>
   )
