@@ -7,10 +7,9 @@ const NerdyThings = ({things}) => {
       <h1>Nerdy Things</h1>
       <Link to='/'>Home</Link>
 
-    {things.map((thing, idx) =>{
-      <ThingCard key={idx} thing={thing} />
-    })}
-
+      {things.map((thing, idx) =>(
+        <ThingCard key={idx} thing={thing} />
+      ))}
     </>
   );
 }
