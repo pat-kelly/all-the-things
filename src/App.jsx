@@ -4,7 +4,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 import NerdyThings from './pages/NerdyThings/NerdyThings'
-import NatureThings from './NatureThings/NatureThings'
+import NatureThings from './pages/NatureThings/NatureThings'
 import FluffyThings from './pages/FluffyThings/FluffyThings'
 
 const App = () => {
@@ -81,7 +81,7 @@ const App = () => {
     },
     {
       name: 'cuttlefish',
-      image: 'https://i.imgur.com/https://images.unsplash.com/photo-1563050912-4659b1079ee4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80.jpg',
+      image: 'https://images.unsplash.com/photo-1615708287937-3edd0ef5161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       attributes: ['intelligent', 'gorgeous', 'so cool'],
     },
     {
