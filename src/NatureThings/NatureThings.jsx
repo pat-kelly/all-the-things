@@ -1,5 +1,8 @@
 const NatureThings = () => {
-  return (  );
+  return (  
+    <>
+    </>
+  );
 }
  
 export default NatureThings
