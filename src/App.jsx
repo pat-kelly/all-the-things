@@ -91,6 +91,13 @@ const App = () => {
     },
   ]
 
+  const laurensThings = [
+    {
+      name: "more_stuff",
+      image: "public/self-portrait.png",  
+      attributes: ["hehe-haha", "lololol", "okay", "cool"],
+    },]
+    
   const fluffyThings = [
     {
       name: 'cat',
